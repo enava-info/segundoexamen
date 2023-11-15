@@ -1,0 +1,42 @@
+section{
+    position: relative;
+    padding: 36px;
+    background-color:blue;
+    display: flex;
+    border-top-right-radius: 75%;
+}
+
+section div{
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.container_float{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 50%;
+    text-align: center;
+}
+
+.img_floty{
+    max-width: 100%;
+}
+
+@media (max-width:720px){
+    section{
+        flex-direction: column;
+    }
+ 
+    section div{
+    max-width: 100%;
+    }
+
+    .container_float{
+        position: static;
+        width: 100%;
+    }
+    .img_floty{
+
+    }
+}

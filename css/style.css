@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
@@ -31,7 +36,7 @@ a:link, a:visited, a:active{
 
 /*-------------------------------------------ITEMS FLEXIBLES---------------------*/
 /*---------1 - HEADER FLEXIBLE--------*/
-.flex-1 {
+.flex-header {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -135,11 +140,27 @@ a:link, a:visited, a:active{
   background: #111;
 }
 
+/*----------------- TITULO INICIO -------------*/
+
+.tituloinicio{
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.tituloinicio h2{
+  text-align: center;
+  padding: 5%;
+  color: hsl(207, 13%, 34%);
+  font-weight: bold;
+  font-size: 35px;
+}
+
+
 /*----------------- SECTION 1 -------------*/
 
 .flex-2 {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -149,26 +170,13 @@ a:link, a:visited, a:active{
   width: 600px;
 }
 
-.f-section1-0 {
-  display: flex;
-  flex-direction: column;
-}
-
-.encima{
-  z-index: 9;
-  position: absolute;
-  padding: 4%;
-  font-size: 24px;
-  color: hsl(208, 49%, 24%);
-  font-weight: bold; 
-}
-
 .f-section1-1{
   display: flex;
   z-index: 3;
   order: -2;
   align-items: center;
   padding: 5%;
+  max-width: 500px;
 }
 .f-section1-1 h2{
   color: hsl(207, 13%, 34%);
@@ -201,6 +209,7 @@ a:link, a:visited, a:active{
   flex-direction: column;
   color: hsl(0, 0%, 100%);
   justify-content: center;
+  position: relative;
 }
 
 .f-section2-2 h2{
@@ -211,6 +220,17 @@ a:link, a:visited, a:active{
 .f-section2-2 p{
   padding-bottom: 20px;
 }
+.f-section2-2 div{
+  flex-grow: 1;
+
+
+}
+
+.flotante{
+  position: absolute;
+  top: -30px;
+}
+
 
 /*----------------- SECTION 3 -------------*/
 
@@ -237,28 +257,27 @@ a:link, a:visited, a:active{
 }
 
 /*----------------- FOOTER -------------*/
-.flex-3 {
+.footer-flex {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
+  align-items:flex-start;
 }
 
-.footer1{
+.Name{
   display: flex;
   flex-direction: column;
 }
-.footer2{
+.Product{
   display: flex;
   flex-direction: column;
 }
 
-.footer3{
+.Company{
   display: inline;
   flex-direction: column;
 }
-.footer4{
+.Connect{
   display: flex;
   flex-direction: column;
 }
@@ -266,10 +285,10 @@ a:link, a:visited, a:active{
 
 
 .lista ul {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
-  padding-top: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   margin: 0px;
 }
 .lista li {
@@ -285,10 +304,47 @@ a:link, a:visited, a:active{
 /*-----VIEWPORTS--------*/
 
 
-@media (max-width:1440px) {
-    /*LAPTOP*/
+
+@media (max-width:640px){
+  .footer-flex{
+    grid-gap: 10%;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
   }
+};
+
+/*max.width de 0 a 100px se va a a aplicar esto*/
+@media (max-width:1000px){
+    .flex-2{
+      flex-direction:column-reverse;
+   }
+
+}
 
 
-@media (min-width:375px){
-    /*tablet*/};
+
+
+
+.sectionprofe{
+  position: relative;
+  padding: 36px;
+  background-color: white;
+  border-bottom-left-radius: 75%;
+  border-top-right-radius: 75%;
+  display: flex;
+
+}
+
+.sectionprofe div{
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.container_float{
+  position: absolute;
+  top: -66px;
+  left: 0%;
+  width: 0%;
+}
+
