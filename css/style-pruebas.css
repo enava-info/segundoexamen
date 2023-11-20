@@ -73,3 +73,11 @@ button {
 .f-item-4 {
   text-align: left;
 }
+
+
+/*max.width de 0 a 100px se va a a aplicar esto*/
+@media (max-width: 1000px) {
+  .flex-2 {
+    flex-direction: column-reverse;
+  }
+}

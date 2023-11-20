@@ -1,9 +1,10 @@
-* {margin: 0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -18,7 +19,6 @@ body {
 footer {
   background-color: hsl(240, 10%, 16%);
   color: white;
-  padding: 2%;
   border-radius: 0px 75px 0px 0px;
 }
 
@@ -26,10 +26,13 @@ div .camello {
   display: inline-block;
 }
 
-div .massa{display: inline;
+div .massa {
+  display: inline;
 }
 
-a:link, a:visited, a:active{
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -57,21 +60,17 @@ a:link, a:visited, a:active{
 /*-------F-HEADER------------*/
 
 .f-header-0 {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  color:white;
+  justify-content: space-around;
+  color: white;
   align-items: center;
-  
 }
 
-.f-header-0 logo{
+.f-header-0 logo {
   font-weight: bold;
-  font-size: 22px;
-  
+  font-size: 32px;
 }
-
-
 
 .f-header-1 {
   text-align: center;
@@ -84,10 +83,17 @@ a:link, a:visited, a:active{
 .massa {
   padding: 1%;
 }
+
+.hamburguesa{display: none;}
+.desaparicion a{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /*--------------------------- BOTONES HEADER ------------------------*/
 .btn1 {
   color: hsl(356, 100%, 66%);
-  padding: 14px 28px;
+  padding: 12px 26px;
   cursor: pointer;
   display: inline;
   background-color: hsl(0, 0%, 100%);
@@ -97,7 +103,7 @@ a:link, a:visited, a:active{
 }
 .btn2 {
   color: hsl(0, 0%, 100%);
-  padding: 14px 28px;
+  padding: 12px 24px;
   cursor: pointer;
   display: inline;
   background-color: inherit;
@@ -142,13 +148,12 @@ a:link, a:visited, a:active{
 
 /*----------------- TITULO INICIO -------------*/
 
-.tituloinicio{
-   display: flex;
-   flex-direction: column;
-   
+.tituloinicio {
+  display: flex;
+  flex-direction: column;
 }
 
-.tituloinicio h2{
+.tituloinicio h2 {
   text-align: center;
   padding: 5%;
   color: hsl(207, 13%, 34%);
@@ -156,45 +161,47 @@ a:link, a:visited, a:active{
   font-size: 35px;
 }
 
-
 /*----------------- SECTION 1 -------------*/
 
-.flex-2 {
+.flex-sec1 {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-}
+ }
 
-.flex-2 div {
-  min-width: 328px;
-  width: 600px;
-}
 
-.f-section1-1{
+.f-section1-1 {
   display: flex;
-  z-index: 3;
   order: -2;
   align-items: center;
   padding: 5%;
-  max-width: 500px;
 }
-.f-section1-1 h2{
+.f-section1-1 h2 {
   color: hsl(207, 13%, 34%);
   padding-bottom: 20px;
+  align-items: left;
 }
 
-.f-section1-1 p{
+.f-section1-1 p {
   padding-bottom: 15px;
 }
-.f-section1-2{
+.f-section1-2 {
   display: inline;
   flex-direction: column;
   align-items: left;
-  z-index: 3;
   order: -1;
 }
 
+
+
+
 /*----------------- SECTION 2 -------------*/
+.flex-sec2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+
 .bg-section2 {
   background-image: url(../images/bg-pattern-circles.svg);
   background-color: hsl(237, 17%, 21%);
@@ -202,6 +209,19 @@ a:link, a:visited, a:active{
   background-position-x: -50%;
   background-position-y: 100%;
   border-radius: 0px 75px;
+  height: 385px;
+  position: relative;
+}
+
+section.bg-section2 div {
+  flex-grow: 1;
+  max-width: 50%;
+  text-align: center;
+  display:flex
+}
+
+.f-section2-1{
+  max-width: 100%;
 }
 
 .f-section2-2 {
@@ -209,30 +229,44 @@ a:link, a:visited, a:active{
   flex-direction: column;
   color: hsl(0, 0%, 100%);
   justify-content: center;
-  position: relative;
+  max-width: 100%;
 }
 
-.f-section2-2 h2{
+.f-section2-2 h2 {
   color: hsl(0, 0%, 100%);
   padding-bottom: 20px;
+  text-align: left;
 }
 
-.f-section2-2 p{
+.f-section2-2 p {
   padding-bottom: 20px;
+  text-align: left;
 }
-.f-section2-2 div{
+.f-section2-2 div {
   flex-grow: 1;
-
-
 }
 
-.flotante{
+.flotante {
   position: absolute;
-  top: -30px;
-}
+  top: -40px;
+  left: 20px;
+  max-width: 100%;
+  display: inline;
+  padding-bottom: 40px;
 
+}
 
 /*----------------- SECTION 3 -------------*/
+
+.flex-sec3{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding-top: 250px;
+  flex-direction: row;
+
+}
+
 
 .f-section3-1 {
   display: flex;
@@ -247,12 +281,12 @@ a:link, a:visited, a:active{
   align-items: left;
 }
 
-.f-section3-2 h2{
+.f-section3-2 h2 {
   padding-bottom: 20px;
-  color:  hsl(208, 49%, 24%);
+  color: hsl(208, 49%, 24%);
 }
 
-.f-section3-2 p{
+.f-section3-2 p {
   padding-bottom: 55px;
 }
 
@@ -260,33 +294,27 @@ a:link, a:visited, a:active{
 .footer-flex {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  align-items:flex-start;
+  padding: 5%;
 }
 
-.Name{
-  display: flex;
-  flex-direction: column;
-}
-.Product{
-  display: flex;
-  flex-direction: column;
+.footer-flex div{
+  width: 100px;
+  text-align: left;
+  padding: 2px;
 }
 
-.Company{
-  display: inline;
-  flex-direction: column;
-}
-.Connect{
-  display: flex;
-  flex-direction: column;
+.footer-flex ul{
+  color: hsl(0, 0%, 100%);
+  padding-top:5px;
 }
 
+.footer-flex li{
+  padding-top:4px;
+  padding-bottom: 4px;
+}
 
 
 .lista ul {
-  padding-right: 0px;
-  padding-left: 0px;
   padding-bottom: 20px;
   padding-top: 20px;
   margin: 0px;
@@ -295,56 +323,102 @@ a:link, a:visited, a:active{
   list-style-type: none;
   padding-top: 5px;
   padding-bottom: 5px;
+  
 }
 
+/*----------------------MEDIAQUERY'S-----------------------*/
 
 
+@media (max-width:617px){
+    .desaparicion{display:none}
+  
+    .hamburguesa{
+      display: block;
+    }
+}
 
+@media(max-width:1090px){
+  .f-section2-2 h2{
+    text-align:center;
+  }
+  .f-section2-2 p{
+    text-align:center;
+  }
+  .flotante{
+    position: unset;
+    width: 75%;
+  }
+}
 
-/*-----VIEWPORTS--------*/
-
-
-
-@media (max-width:640px){
-  .footer-flex{
-    grid-gap: 10%;
-    flex-direction: column;
-    align-items:center;
+@media (max-width:900px){
+   .flex-sec1{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .flex-sec1 div {
+  width: 100%;
+  }
+  .f-section1-2 img{
+    width:100%;
+    max-width: 484px;
+  }
+  .f-section1-1{
+    max-width: 100%;
+    text-align: center;
+  }
+  .f-section1-2{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
     justify-content: center;
   }
-};
 
-/*max.width de 0 a 100px se va a a aplicar esto*/
-@media (max-width:1000px){
-    .flex-2{
-      flex-direction:column-reverse;
-   }
+  .flex-sec2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .bg-section2{
+    height: auto;
+    width: auto;
+  }
+  .f-section2-1{
+    max-width: 100%;
+  }
+  .f-section2-2{
+    max-width: 100%;
+  }
+  .f-section2-2 p{
+    text-align: center;
+  }
+  .f-section2-2 h2{
+    text-align: center;
+  }
 
+
+
+  .flotante{
+    display:flex;
+    position:unset;
+    padding: 0px;
+  }
+
+  .flex-sec3{
+    padding-top: 2%;
+    flex-direction: column;
+  }
+
+  .flex-sec3 h2,p{
+    text-align: center;
+  }
 }
 
+@media (max-width: 400px) {
+   .footer-flex {
+    grid-gap: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-
-
-
-.sectionprofe{
-  position: relative;
-  padding: 36px;
-  background-color: white;
-  border-bottom-left-radius: 75%;
-  border-top-right-radius: 75%;
-  display: flex;
-
+  
 }
-
-.sectionprofe div{
-  flex-grow: 1;
-  max-width: 50%;
-}
-
-.container_float{
-  position: absolute;
-  top: -66px;
-  left: 0%;
-  width: 0%;
-}
-

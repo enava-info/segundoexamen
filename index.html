@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>¡Segundo Parcial de Taller Web!</title>
     <link rel="stylesheet" href="./css/style.css" />
+    
   </head>
   <body>
     <header class="flex-header">
+   
       <nav class="f-header-0">
+       
         <logo>
           <a href="#">Blogr</a>
         </logo>
-        <div>
+        
+         
+        <div class="desaparicion">
           <a href="#">Product</a>
           <a href="#">Company</a>
           <a href="#">Connect</a>
         </div>
         <div>
-          <button class="btn3" href="#">LogIn</button>
-          <button class="btn4" href="#">Sign Up</button>
+          <button class="btn3 desaparicion" href="#">LogIn</button>
+          <button class="btn4 desaparicion" href="#">Sign Up</button>
+          <menu class="hamburguesa">
+          <img class="imghamb" src="./images/icon-hamburger.svg" alt="">
+        </menu>
         </div>
       </nav>
+      
       <section class="f-header-1">
         <h1 class="massa">A modern publishing platform</h1>
         <p class="massa">Grow your audience and build your online brand</p>
@@ -36,7 +45,7 @@
         <h2>Designed for the future</h2>
       </section>
       <!-- SECCION 1 -->
-      <section class="flex-2">
+      <section class="flex-sec1">
         <div class="f-section1-1">
           <article>
             <h2>Introducing an extensible editor</h2>
@@ -59,21 +68,20 @@
         </div>
 
         <div class="f-section1-2">
-          <img src="./images/illustration-editor-desktop.svg" alt="" />
+          <img src="./images/illustration-editor-desktop.svg" alt=""/>
         </div>
       </section>
-
       <!-- SECCION 2 -->
-
-      <section class="flex-2 bg-section2">
-        <div class="f-section2-1">
-          <img
-            src="./images/illustration-phones.svg"
-            alt=""
-            width="300px"
-            class="flotante"
-          />
-        </div>
+      <section class="flex-sec2 bg-section2">
+        
+          <div class="f-section2-1">
+            <img  src="./images/illustration-phones.svg" 
+                  alt=""
+                  width="auto"
+                  class="flotante"
+            />
+          </div>
+        
         <div class="f-section2-2">
           <h2>State of the Art Infraestructure</h2>
           <p>
@@ -85,9 +93,9 @@
         </div>
       </section>
       <!-- SECCION 3 -->
-      <section class="flex-2">
+      <section class="flex-sec3">
         <div class="f-section3-1">
-          <img src="./images/illustration-laptop-desktop.svg" alt="" />
+          <img src="./images/illustration-laptop-desktop.svg" alt="" width="3500px"/>
         </div>
         <div class="f-section3-2">
           <h2>Free, open, simple</h2>
@@ -113,7 +121,7 @@
         <h2>Blogr</h2>
       </div>
       <div class="Product">
-        <h4>Product</h4>
+        <h3>Product</h3>
         <ul type="none">
           <li>Overview</li>
           <li>Pricing</li>
@@ -122,8 +130,10 @@
           <li>Integrations</li>
         </ul>
       </div>
+ 
+      
       <div class="Company">
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul type="none">
           <li>About</li>
           <li>Team</li>
@@ -131,14 +141,17 @@
           <li>Careers</li>
         </ul>
       </div>
-      <div class="Connect">
-        <h4>Connect</h4>
+
+        <div class="Connect">
+        <h3>Connect</h3>
         <ul type="none">
           <li>Contact</li>
           <li>Newsletter</li>
           <li>Linkedin</li>
         </ul>
       </div>
+
+    
     </footer>
   </body>
   <!-- Comentarios -->
